@@ -1,0 +1,16 @@
+{
+  "name": "tms",
+  "version": "1.0.0",
+  "description": "Kanban task management system",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start-frontend": "cd frontend && npm run dev",
+    "start-backend": "cd backend && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
